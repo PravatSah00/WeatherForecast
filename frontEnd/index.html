@@ -8,10 +8,50 @@
     <title>WeatherForecast</title>
 </head>
 <body>
-    <div id="nev-bar">
-        
+    <div class="header d-flex border">
+        <div class="title">CL<i class="fa-solid fa-droplet"></i>UD</div>
+        <div class="navbar">
+            <form class="search">
+                <i class="fa-solid fa-magnifying-glass-location search-icon"></i>
+                <input class="input" type="text" placeholder="  Search Zip, City, Place">
+                <button class="btn">Get Update</button>
+            </form>
+        </div>
+        <i class="fa-solid fa-bars bars"></i>
     </div>
-    
+    <div class="main-container">
+        <div class="head-container">
+            <img src="image/sun-cloud.png" alt="Sun-cloud">
+            <div class="text-container">
+                <h1 class="first-head">TOTAL WEATHER REPORT</h1>
+                <h1 class="date">26th November 2022</h1>
+                <i class="fa-solid fa-location-dot"></i>
+                <h1 class="location">Kolkata</h1>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="weather-container">
+                <div class="wave1 wave"></div>
+                <div class="wave2 wave"></div>
+                <div class="wave3 wave"></div>
+                <div class="wave4 wave"></div>
+                <p class="hhh">Local Weather Report</p>
+                <p class="date">November 26</p>
+                <p class="day">SUNDAY</p>
+                <p class="status">SUNNY</p>
+            </div>
+            <div class="temp-container">
+                <p class="temp-c">24° C</p>
+                <p class="temp-f">40° F</p>
+                <p class="temp-min">Min-temp</p>
+                <p class="temp-max">Max-temp</p>
+                <div class="background"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/56a678f80d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <script src=""></script>
 </body>
 </html>
