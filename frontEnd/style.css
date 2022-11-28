@@ -195,6 +195,11 @@ i.bars{
         display: inline-block;
     }
     .search{
+        position: absolute;
+        right: 0;
+        top:70px;
+    }
+    .search-display{
         display: none;
     }
     .head-container{

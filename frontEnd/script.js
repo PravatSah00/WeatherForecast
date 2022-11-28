@@ -59,4 +59,60 @@ function waveAnimation(){
     }
 }
 
+//Set date and weakday
+function setDay(){
+    const dateElements = document.querySelectorAll(".date");
+    const dayElement = document.querySelector(".day");
+    const monthArr = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'Jun',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+    ]
+    const dayArr = [
+        'SUNDAY',
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        'THURSDAY',
+        'FRIDAY',
+        'SATURDAY'
+    ]
+    
+    const dateObj = new Date();
+    let day = dayArr[dateObj.getDay()];
+    let date = dateObj.getDate();
+    let month = monthArr[dateObj.getMonth()];
+    let year = dateObj.getFullYear();
+    
+    let st_nd_rd_th = 'th';
+    if(date == 1){
+        st_nd_rd_th = "st";
+    }else if(date == 2){
+        st_nd_rd_th = "nd";
+    }else if(date == 3){
+        st_nd_rd_th = "rd";
+    }
+    
+    dateElements[0].textContent = `${date}${st_nd_rd_th} ${month} ${year}`;
+    dateElements[1].textContent = `${month} ${date}`;
+    dayElement.textContent = day;
+}
+
+//Set bar's click action 
+const bar = document.querySelector(".bars");
+const search = document.querySelector(".search");
+bar.addEventListener("click",()=>{
+    search.classList.toggle("search-display");
+});
+
 waveAnimation();
+setDay();
