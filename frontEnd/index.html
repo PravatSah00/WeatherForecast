@@ -26,7 +26,7 @@
                 <h1 class="first-head">TOTAL WEATHER REPORT</h1>
                 <h1 class="date"></h1>
                 <i class="fa-solid fa-location-dot"></i>
-                <h1 class="location">Kolkata</h1>
+                <h1 class="location">{%location%}</h1>
             </div>
         </div>
         <div class="content-container">
@@ -38,13 +38,13 @@
                 <p class="hhh">Local Weather Report</p>
                 <p class="date"></p>
                 <p class="day"></p>
-                <p class="status">SUNNY</p>
+                <p class="status">{%status%}</p>
             </div>
             <div class="temp-container">
-                <p class="temp-c">24° C</p>
-                <p class="temp-f">40° F</p>
-                <p class="temp-min">Min-temp</p>
-                <p class="temp-max">Max-temp</p>
+                <p class="temp-c">{%tempC%}° C</p>
+                <p class="temp-f">{%tempF%}° F</p>
+                <p class="temp-min">Min {%tempMin%}° C</p>
+                <p class="temp-max">Max {%tempMax%}° C</p>
                 <div class="background"></div>
             </div>
         </div>
